@@ -20,7 +20,36 @@ time, mark, audio, video
         vertical-align: baseline;
     }
 
+h1 {
+    font-size: 3.5rem;
+    color: blue;
+    font-family: "Helvetica", sans-serif;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-family: "Helvetica", sans-serif;
+}
+
 #header {
-    background-color: red;
-    border: 2px, solid, black;
+    text-align: center;
+    padding: 5rem;
+    margin-bottom: 1rem;
+}
+
+#nav-bar li {
+    display: inline;
+    padding: 1.5rem;
+}
+
+#nav-bar ul {
+    background-color: silver;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blurb-text {
+    background-color: silver;
+    padding: 1rem;
 }
