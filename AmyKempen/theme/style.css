@@ -22,19 +22,31 @@ time, mark, audio, video
 
 h1 {
     font-size: 3.5rem;
-    color: blue;
+    color: #ffffff;
+    font-weight: bold;
     font-family: "Helvetica", sans-serif;
+    margin-bottom: 10px;
 }
 
 h2 {
     font-size: 1.25rem;
+    color: #ffffff;
     font-family: "Helvetica", sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Helvetica", sans-serif;
+    margin-bottom: 10px;
 }
 
 #header {
     text-align: center;
-    padding: 5rem;
+    padding: 10rem;
     margin-bottom: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg);
 }
 
 #nav-bar li {
@@ -43,13 +55,34 @@ h2 {
 }
 
 #nav-bar ul {
-    background-color: silver;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #4682b4;
     text-align: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 1.25rem;
 }
 
 .blurb-text {
-    background-color: silver;
-    padding: 1rem;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.blurb-text img {
+    width: 15rem;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+#footer {
+    text-align: center;
+    background-color: black;
+    padding: 1.25rem;
+}
+
+#footer li {
+    display: inline;
+    padding: 1.5rem;
+    color: #ffffff;
 }
