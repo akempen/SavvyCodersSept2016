@@ -41,20 +41,62 @@ h3 {
     margin-bottom: 10px;
 }
 
-#header {
+.header-blog {
     text-align: center;
     padding: 10rem;
     margin-bottom: 1rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
     url(https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg);
+    background-size: cover;
 }
 
-#nav-bar li {
+.header-media {
+    text-align: center;
+    padding: 10rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc-1456070535WEH.jpg);
+    background-size: cover;
+}
+
+.header-projects {
+    text-align: center;
+    padding: 10rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(https://assets.entrepreneur.com/content/16x9/822/20150708163614-wordpress-millenial-desk-startup-plug-ins.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-bar {
+    position:fixed;
+}
+
+.nav-bar a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: #ffd700;
+}
+
+.nav-bar a:active {
+    color: #ffd700;
+}
+
+.nav-bar li {
     display: inline;
     padding: 1.5rem;
 }
 
-#nav-bar ul {
+.nav-bar ul {
     font-family: "Helvetica", sans-serif;
     font-size: 1rem;
     font-weight: bold;
@@ -75,13 +117,13 @@ h3 {
     margin-right: 20px;
 }
 
-#footer {
+.footer {
     text-align: center;
     background-color: black;
     padding: 1.25rem;
 }
 
-#footer li {
+.footer li {
     display: inline;
     padding: 1.5rem;
     color: #ffffff;
