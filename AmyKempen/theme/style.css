@@ -35,16 +35,15 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: "Helvetica", sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .header-blog {
     text-align: center;
     padding: 10rem;
-    margin-bottom: 1rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
     url(https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg);
     background-size: cover;
@@ -53,7 +52,6 @@ h3 {
 .header-media {
     text-align: center;
     padding: 10rem;
-    margin-bottom: 1rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
     url(http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc-1456070535WEH.jpg);
     background-size: cover;
@@ -62,15 +60,17 @@ h3 {
 .header-projects {
     text-align: center;
     padding: 10rem;
-    margin-bottom: 1rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
     url(https://assets.entrepreneur.com/content/16x9/822/20150708163614-wordpress-millenial-desk-startup-plug-ins.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.nav-bar {
-    position:fixed;
+.header-homepage {
+    text-align: center;
+    padding: 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/11403017_10152903802396456_6562952946449522985_n.jpg?oh=b7767893ce04d5222e6d1821f59d0d66&oe=58407C02);
+    background-size: cover;
 }
 
 .nav-bar a:link {
@@ -99,32 +99,48 @@ h3 {
 .nav-bar ul {
     font-family: "Helvetica", sans-serif;
     font-size: 1rem;
-    font-weight: bold;
-    background-color: #4682b4;
+    background-color: #008b8b;
     text-align: center;
     padding: 1.25rem;
 }
 
+
 .blurb-text {
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-right: 20px;
+    margin-bottom: 150px;
 }
 
 .blurb-text img {
-    width: 15rem;
+    width: 25rem;
     height: auto;
     float: left;
     margin-right: 20px;
+    margin-left: 30px;
 }
 
 .footer {
     text-align: center;
-    background-color: black;
+    font-family: "Helvetica", sans-serif;
     padding: 1.25rem;
 }
 
 .footer li {
     display: inline;
     padding: 1.5rem;
-    color: #ffffff;
+}
+
+.footer a:link {
+    color: #708090;
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: #708090;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #008b8b;
 }
