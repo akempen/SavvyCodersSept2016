@@ -41,6 +41,16 @@ h3 {
     margin-bottom: 8px;
 }
 
+input {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 90vw;
+}
+
 .header-blog {
     text-align: center;
     padding: 10rem;
