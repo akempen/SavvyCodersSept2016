@@ -18,6 +18,7 @@ time, mark, audio, video
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
+        box-sizing: border-box;
     }
 
 h1 {
@@ -43,6 +44,7 @@ h3 {
 
 input {
     width: 100%;
+    margin: 0.5rem;
 }
 
 .container {
@@ -51,9 +53,18 @@ input {
     width: 90vw;
 }
 
+input[type='radio'] {
+    width: 5%;
+}
+
+
 .header-blog {
     text-align: center;
-    padding: 10rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
     url(https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg);
     background-size: cover;
