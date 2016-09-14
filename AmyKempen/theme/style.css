@@ -43,7 +43,7 @@ h3 {
 }
 
 input {
-    width: 20%;
+    /*width: 20%;*/
     margin: 0.5rem;
 }
 
@@ -59,8 +59,8 @@ input {
 
 .fill-in-info {
     display: flex;
-    flex-flow: wrap;
-    justify-content: flex-start;
+    /*flex-flow: wrap;
+    justify-content: flex-start;*/
     /*align-items: center;*/
 }
 
@@ -102,16 +102,24 @@ input {
 }
 
 .nav-bar {
-    height: 5rem;
-    background-color: #008b8b;
     font-size: 1rem;
     font-family: "Helvetica", sans-serif;
     text-align: center;
+}
+.nav-bar ul {
+    background-color: #008b8b;
+    height: 5rem;
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar li {
+    padding: 5px 10px;
+    background-color: hotpink;
+    margin: 10px;
 }
 
 .nav-bar a:link {
