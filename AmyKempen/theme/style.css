@@ -21,56 +21,62 @@ time, mark, audio, video
         box-sizing: border-box;
     }
 
-    .nav-bar {
+.container {
+        margin: 0 auto;
+        max-width: 960px;
+}
+
+.nav-bar {
         font-size: 1rem;
         font-family: "Helvetica", sans-serif;
         text-align: center;
-    }
-    .nav-bar ul {
         background-color: #008b8b;
+}
+
+.nav-bar ul {
         height: 5rem;
         list-style-type: none;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-    }
+}
 
-    .nav-bar li {
+.nav-bar li {
         padding: 5px 10px;
         background-color: hotpink;
         margin: 10px;
-    }
+}
 
-    .nav-bar a:link {
+.nav-bar a:link {
         color: white;
         text-decoration: none;
-    }
+}
 
-    .nav-bar a:visited {
+.nav-bar a:visited {
         color: white;
         text-decoration: none;
-    }
+}
 
-    .nav-bar a:hover {
+.nav-bar a:hover {
         color: #ffd700;
-    }
+}
 
-    .nav-bar a:active {
+.nav-bar a:active {
         color: #ffd700;
-    }
+}
 
-    /*.nav-bar li {
+/*.nav-bar li {
         display: inline;
         padding: 1.5rem;
-    }
+}
 
-    .nav-bar ul {
+.nav-bar ul {
         font-family: "Helvetica", sans-serif;
         text-align: center;
-    }*/
+}*/
 
-    .header-blog {
+.header-blog {
         text-align: center;
         height: 25rem;
         display: flex;
@@ -80,31 +86,31 @@ time, mark, audio, video
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
         url(https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg);
         background-size: cover;
-    }
+}
 
-    .header-media {
+.header-media {
         text-align: center;
         padding: 10rem;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
         url(http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc-1456070535WEH.jpg);
         background-size: cover;
-    }
+}
 
-    .header-projects {
+.header-projects {
         text-align: center;
         padding: 10rem;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
         url(https://assets.entrepreneur.com/content/16x9/822/20150708163614-wordpress-millenial-desk-startup-plug-ins.jpeg);
         background-size: cover;
-    }
+}
 
-    .header-homepage {
+.header-homepage {
         text-align: center;
         padding: 10rem;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
         url(https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/11403017_10152903802396456_6562952946449522985_n.jpg?oh=b7767893ce04d5222e6d1821f59d0d66&oe=58407C02);
         background-size: cover;
-    }
+}
 
 
 h1 {
@@ -142,16 +148,6 @@ input {
     margin: 0.5rem;
 }
 
-
-.container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 90vw;
-}
-
-/*input[type='radio'] {
-    width: 5%;
-}*/
 
 .fill-in-info {
     display: flex;
