@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Amy's Contact Page</title>
     <link rel="stylesheet" href="../theme/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
@@ -16,38 +17,38 @@
                     <li><a href="../media/index.html">Media</a></li>
                     <li><a href="../projects/index.html">Projects</a></li>
                     <li><a href="../blog/index.html">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
                     <li><a href="https://sept2016studentshowcase.firebaseapp.com/">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="header-blog">
+        <div class="header-contact">
             <h1>Contact</h1>
             <h2>Let's Chat</h2>
         </div>
 
+    <!-- <div class="container">
+        <div class="blurb-text">
+            <img src="http://www.holidayfeed.com/wp-content/uploads/2015/05/Venezia-tourism-guide.jpg" alt="Venice" />
+            <h3>Italy</h3>
+            <p>I LOVE to travel. I first traveled to Europe after my senior year in high school and I've had the travel bug ever since. I've been to Europe several times, including studying abroad in Italy, but this November my husband and I are mixing things up and going to South Africa. It's going to be so different and I can't wait!
+            </p>
+        </div>
+
+        <div class="blurb-text">
+            <img src="http://www.holidayfeed.com/wp-content/uploads/2015/05/Venezia-tourism-guide.jpg" alt="Venice" />
+            <h3>Italy</h3>
+            <p>I LOVE to travel. I first traveled to Europe after my senior year in high school and I've had the travel bug ever since. I've been to Europe several times, including studying abroad in Italy, but this November my husband and I are mixing things up and going to South Africa. It's going to be so different and I can't wait!
+            </p>
+        </div>
+    </div> -->
+
     <div class="container">
-        <div class="blurb-text">
-            <img src="http://www.holidayfeed.com/wp-content/uploads/2015/05/Venezia-tourism-guide.jpg" alt="Venice" />
-            <h3>Italy</h3>
-            <p>I LOVE to travel. I first traveled to Europe after my senior year in high school and I've had the travel bug ever since. I've been to Europe several times, including studying abroad in Italy, but this November my husband and I are mixing things up and going to South Africa. It's going to be so different and I can't wait!
-            </p>
-        </div>
-
-        <div class="blurb-text">
-            <img src="http://www.holidayfeed.com/wp-content/uploads/2015/05/Venezia-tourism-guide.jpg" alt="Venice" />
-            <h3>Italy</h3>
-            <p>I LOVE to travel. I first traveled to Europe after my senior year in high school and I've had the travel bug ever since. I've been to Europe several times, including studying abroad in Italy, but this November my husband and I are mixing things up and going to South Africa. It's going to be so different and I can't wait!
-            </p>
-        </div>
-    </div>
-
-    <div id="content">
-        <div class="container">
+        <div id="form">
             <form action="form-responses/new" method="POST">
                 <div class="fill-in-info">
-                    <input type="text" name="firstname" placeho="First Name" autofocus>
+                    <input type="text" name="firstname" placeholder="First Name" autofocus>
                     <input type="text" name="lastname" placeholder="Last Name">
                     <input type="email" name="userEmail" placeholder="your.email@example.com">
                 </div>
@@ -59,14 +60,14 @@
                         <br>
                         <input type="radio" name="subject" value="personal" checked><span>Personal message</span>
                         <br>
-                        <input type="radio" name="subject" value="other" checked><span>Don't know/something else</span>
+                        <input type="radio" name="subject" value="other" checked><span>Something else</span>
                     </label>
                 </div>
 
                 <div class="subscribe-area">
                     <h4>Subscribe me to your newsletter!</h4>
-                    <input type="checkbox" name="optin" value="trusting" checked>
-                    <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
+                    <input type="checkbox" name="option" value="trusting" checked>Subscribe please!
+                    <input type="checkbox" name="optout" value="skeptical" checked>No thank you
                 </div>
 
                 <div class="hear-about-me">
@@ -87,7 +88,11 @@
                     </select>
                 </div>
 
-                <textarea name="user_message" rows="8" cols="40"></textarea>
+                <di>
+                    <h4>Message me</h4>
+                    <textarea name="user_message" rows="8" cols="40"></textarea>
+                </di>
+
                 <input type="submit">
             </form>
         </div>

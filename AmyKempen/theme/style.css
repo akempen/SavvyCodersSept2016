@@ -36,17 +36,30 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    font-weight: bold;
-    font-family: "Helvetica", sans-serif;
+    /*font-weight: bold;*/
+    font-family: "Open Sans", "Helvetica", sans-serif;
     margin-bottom: 8px;
+    color: #008b8b;
+    text-align: center;
     }
 
 h4 {
     font-family: "Arial Black", sans-serif;
     }
 
+p   {
+    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-size: 0.85rem;
+    padding-bottom: 10px;
+    line-height: 1.75;
+    }
+
+iframe {
+    text-align: center;
+}
+
 form {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Open Sans", "Helvetica", sans-serif;
     padding: 10px 0;
     }
 
@@ -65,25 +78,29 @@ input[type='submit'] {
 }
 
 .nav-bar {
-    font-size: 1rem;
-    font-family: "Open Sans", "Helvetica", sans-serif;
-    font-weight: 100;
-    text-align: center;
+    /*height: 2rem;*/
+    width: 100%;
     background-color: #008b8b;
+    position: fixed;
+    /*top: 0;
+    left: 0;*/
 }
 
 .nav-bar ul {
-    height: 4rem;
+    font-size: 1rem;
+    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-weight: 100;
+    /*text-align: center;*/
     list-style-type: none;
+    /*display: inline;*/
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     flex-wrap: wrap;
 }
 
 .nav-bar li {
-    padding: 5px 10px;
-    margin: 10px;
+    padding: 10px 20px;
 }
 
 .nav-bar a:link {
@@ -104,15 +121,44 @@ input[type='submit'] {
     color: #ffd700;
 }
 
-/*.nav-bar li {
-    display: inline;
-    padding: 1.5rem;
+.header-homepage {
+    text-align: center;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/11403017_10152903802396456_6562952946449522985_n.jpg?oh=b7767893ce04d5222e6d1821f59d0d66&oe=58407C02);
+    background-size: cover;
+    margin-bottom: 40px;
 }
 
-.nav-bar ul {
-    font-family: "Helvetica", sans-serif;
+.header-media {
     text-align: center;
-}*/
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc-1456070535WEH.jpg);
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.header-projects {
+    text-align: center;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(https://assets.entrepreneur.com/content/16x9/822/20150708163614-wordpress-millenial-desk-startup-plug-ins.jpeg);
+    background-size: cover;
+    margin-bottom: 40px;
+}
 
 .header-blog {
     text-align: center;
@@ -124,30 +170,20 @@ input[type='submit'] {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
     url(https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg);
     background-size: cover;
+    margin-bottom: 40px;
 }
 
-.header-media {
+.header-contact {
     text-align: center;
-    padding: 10rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
-    url(http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc-1456070535WEH.jpg);
+    url(http://cdn.playbuzz.com/cdn/c6fe5e23-a4d1-49dd-84a6-809ec6a83b7a/37386659-3c93-44e1-8162-f58546ca0de7.jpg);
     background-size: cover;
-}
-
-.header-projects {
-    text-align: center;
-    padding: 10rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
-    url(https://assets.entrepreneur.com/content/16x9/822/20150708163614-wordpress-millenial-desk-startup-plug-ins.jpeg);
-    background-size: cover;
-}
-
-.header-homepage {
-    text-align: center;
-    padding: 10rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
-    url(https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/11403017_10152903802396456_6562952946449522985_n.jpg?oh=b7767893ce04d5222e6d1821f59d0d66&oe=58407C02);
-    background-size: cover;
+    margin-bottom: 40px;
 }
 
 .fill-in-info {
@@ -164,13 +200,24 @@ input[type='submit'] {
 
 
 .blurb-text {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     margin-bottom: 50px;
+    /*position: relative;*/
+    /*margin-bottom: 50px;*/
+}
+
+.blurb-text h3 {
+    margin-bottom: 20px;
 }
 
 .blurb-text img {
     width: 25rem;
     height: auto;
+    float: left;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    /*display: inline;*/
     /*float: left;*/
     /*margin-right: 20px;*/
     /*margin-left: 30px;*/
@@ -199,4 +246,8 @@ input[type='submit'] {
 
 .footer a:hover {
     color: #008b8b;
+}
+
+@media (max-width: 350px) {
+    .blurb-text img {display: none;}
 }
