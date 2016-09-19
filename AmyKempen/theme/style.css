@@ -24,31 +24,32 @@ h1 {
     font-size: 3.5rem;
     color: #ffffff;
     font-weight: 100;
-    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     margin-bottom: 10px;
     }
 
 h2 {
     font-size: 1.25rem;
     color: #ffffff;
-    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     }
 
 h3 {
     font-size: 1.5rem;
     /*font-weight: bold;*/
-    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     margin-bottom: 8px;
     color: #008b8b;
     text-align: center;
     }
 
 h4 {
-    font-family: "Arial Black", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-weight: 800;
     }
 
 p   {
-    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     font-size: 0.85rem;
     padding-bottom: 10px;
     line-height: 1.75;
@@ -59,7 +60,7 @@ iframe {
 }
 
 form {
-    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     padding: 10px 0;
     }
 
@@ -78,24 +79,19 @@ input[type='submit'] {
 }
 
 .nav-bar {
-    /*height: 2rem;*/
     width: 100%;
     background-color: #008b8b;
     position: fixed;
-    /*top: 0;
-    left: 0;*/
+
 }
 
 .nav-bar ul {
     font-size: 1rem;
-    font-family: "Open Sans", "Helvetica", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     font-weight: 100;
-    /*text-align: center;*/
     list-style-type: none;
-    /*display: inline;*/
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
     flex-wrap: wrap;
 }
 
@@ -190,8 +186,6 @@ input[type='submit'] {
     display: flex;
     margin-bottom: 20px;
     flex-flow: wrap;
-    /*justify-content: flex-start;*/
-    /*align-items: center;*/
 }
 
 .radio-area, .subscribe-area, .hear-about-me {
@@ -200,7 +194,6 @@ input[type='submit'] {
 
 
 .blurb-text {
-    /*padding-top: 50px;*/
     margin-bottom: 50px;
     /*position: relative;*/
     /*margin-bottom: 50px;*/
@@ -217,15 +210,16 @@ input[type='submit'] {
     padding-top: 20px;
     padding-right: 30px;
     padding-bottom: 20px;
-    /*display: inline;*/
-    /*float: left;*/
-    /*margin-right: 20px;*/
-    /*margin-left: 30px;*/
+}
+
+.blurb-text-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
     text-align: center;
-    font-family: "Helvetica", sans-serif;
     padding: 1.25rem;
 }
 
