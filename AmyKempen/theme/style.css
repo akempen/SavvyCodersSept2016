@@ -242,6 +242,6 @@ input[type='submit'] {
     color: #008b8b;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     .blurb-text img {display: none;}
 }
