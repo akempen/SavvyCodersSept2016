@@ -23,52 +23,48 @@ var updateOutput = function ( input ) {
     document.querySelector( "#output" ).textContent = input;
 };
 
+
 //Main CYOA
+
+//Step 1: Names
 mainCharacter.name = prompt ( "What's your name?" );
+
 ancilliaryCharacter.name = prompt ( "Who do you want to travel with?" );
 
-console.log (mainCharacter);
-console.log (ancilliaryCharacter);
-
-//Step 1
 promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico");
 
-if (promptText === "Italy") {
+//Step 2: Country
+while ( promptText !== "Italy" && promptText !== "Mexico" ) {
+    promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico");
+}
+if ( promptText === "Italy" ) {
     promptText = prompt ( story.country.good + " Which city would you like to visit, Florence or Rome?" );
 }
-
-else if (promptText === "Mexico") {
+else if ( promptText === "Mexico" ) {
     updateOutput ( story.country.bad );
 };
 
-//Step 2
-if (promptText === "Florence") {
+//Step 3: City
+while ( promptText !== "Florence" && promptText !== "Rome" ) {
+    promptText = prompt ( story.country.good + " Which city would you like to visit, Florence or Rome?" );
+}
+if ( promptText === "Florence" ) {
     promptText = prompt ( story.city.good + " Are you feeling adventurous, yes or no?" );
 }
-
-else if (promptText === "Rome") {
+else if ( promptText === "Rome" ) {
     updateOutput ( story.city.bad );
 };
 
-
-//Step 3
-if (promptText === "yes") {
-    updateOutput (story.adventure.good);
+//Step 4: Adventure
+while ( promptText !== "yes" && promptText !== "no" ) {
+    promptText = prompt ( story.city.good + " Are you feeling adventurous, yes or no?" );
 }
-
-else if (promptText === "no") {
-    updateOutput (story.adventure.bad);
+if ( promptText === "yes" ) {
+    updateOutput ( story.adventure.good );
+}
+else if ( promptText === "no" ) {
+    updateOutput ( story.adventure.bad );
 };
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -107,29 +103,29 @@ else if (promptText === "no") {
 // //Step 1
 // promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico");
 //
-// if (promptText === "Italy") {
+// if ( promptText === "Italy" ) {
 //     promptText = prompt ( story.country.good + " Which city would you like to visit, Florence or Rome?" );
 // }
 //
-// else if (promptText === "Mexico") {
+// else if ( promptText === "Mexico" ) {
 //     updateOutput ( story.country.bad );
 // };
 //
 // //Step 2
-// if (promptText === "Florence") {
+// if ( promptText === "Florence" ) {
 //     promptText = prompt ( story.city.good + " Are you feeling adventurous, yes or no?" );
 // }
 //
-// else if (promptText === "Rome") {
+// else if ( promptText === "Rome" ) {
 //     updateOutput ( story.city.bad );
 // };
 //
 //
 // //Step 3
-// if (promptText === "yes") {
-//     updateOutput (story.adventure.good);
+// if ( promptText === "yes" ) {
+//     updateOutput ( story.adventure.good );
 // }
 //
-// else if (promptText === "no") {
-//     updateOutput (story.adventure.bad);
+// else if ( promptText === "no" ) {
+//     updateOutput ( story.adventure.bad );
 // };
