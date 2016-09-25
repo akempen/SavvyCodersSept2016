@@ -34,15 +34,16 @@ ancilliaryCharacter.name = prompt ( "Who do you want to travel with?" );
 promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico");
 
 //Step 2: Country
-while ( promptText !== "Italy" && promptText !== "Mexico" ) {
-    promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico");
-}
 if ( promptText === "Italy" ) {
     promptText = prompt ( story.country.good + " Which city would you like to visit, Florence or Rome?" );
+    while ( promptText !== "Italy" && promptText !== "Mexico" ) {
+        promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico");
+    }
 }
 else if ( promptText === "Mexico" ) {
     updateOutput ( story.country.bad );
-};
+}
+
 
 //Step 3: City
 while ( promptText !== "Florence" && promptText !== "Rome" ) {
