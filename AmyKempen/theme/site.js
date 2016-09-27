@@ -1,3 +1,12 @@
+$(".hamburger").click (function () { // hamburger is visible
+    $(".dropdown").slideToggle(); // slideToggle triggered, hamburger hidden
+});
+
+
+
+
+
+
 // var firstName = prompt ( "Hi! What's your first name?");
 // var lastName = prompt ( "Hi! What's your last name?");
 //

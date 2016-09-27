@@ -96,6 +96,13 @@ input[type='submit'] {
 }
 
 .nav-bar li {
+    /*font-size: 1rem;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-weight: 100;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;*/
     padding: 10px 20px;
 }
 
@@ -240,6 +247,16 @@ input[type='submit'] {
 
 .footer a:hover {
     color: #008b8b;
+}
+
+.fa-bars:before {
+   display: none;
+}
+
+@media (max-width: 400px) {
+    .fa-bars:before {
+        display: block;
+    }
 }
 
 @media (max-width: 400px) {
