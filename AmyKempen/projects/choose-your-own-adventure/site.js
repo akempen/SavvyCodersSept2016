@@ -19,7 +19,6 @@ var story = {
         }
 };
 
-// added here to keep things organized (following "vars-on-top" rule)
 var promptText;
 
 //Helper functions
@@ -35,40 +34,43 @@ mainCharacter.name = prompt ( "What's your name?" );
 
 ancilliaryCharacter.name = prompt ( "Who do you want to travel with?" );
 
-promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico"); // promptText is "Mexico"
-
+promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico?");
+while( promptText !== "Italy" && promptText !== "Mexico" ){
+    promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico?");
+}
 
 //Step 2: Country
-if ( promptText === "Italy" ) { // promptText is "Mexico", condition is false, code from lines 45-50 will not run
+if (promptText === "Mexico") {
+    updateOutput ( story.country.bad );
+}
+else if ( promptText === "Italy" ) {
     promptText = prompt ( story.country.good + " Which city would you like to visit, Florence or Rome?" );
-    while ( promptText !== "Italy" && promptText !== "Mexico" ) {
-        promptText = prompt ( mainCharacter.name + " and " + ancilliaryCharacter.name + " decide to go on a trip together. Should you go to Italy or Mexico");
+    while ( promptText !== "Florence" && promptText !== "Rome" ) {
+        promptText = prompt ( story.country.good + " Which city would you like to visit, Florence or Rome?" );;
     }
 }
-else if ( promptText === "Mexico" ) { // promptText is "Mexico", condition is true, code from lines 51-53 will run
-    updateOutput ( story.country.bad ); // promptText is "Mexico", "bad" condition is appended as HTML to screen
-}
+// else if ( promptText === "Mexico" ) { // promptText is "Mexico", condition is true, code from lines 51-53 will run
+//     updateOutput ( story.country.bad ); // promptText is "Mexico", "bad" condition is appended as HTML to screen
+// }
 
 
 //Step 3: City
-while ( promptText !== "Florence" && promptText !== "Rome" ) { // promptText is "Mexico", condition is true, code from lines 57-59 will run
-    promptText = prompt ( story.country.good + " Which city would you like to visit, Florence or Rome?" ); // promptText is now "Rome"
-}
-if ( promptText === "Florence" ) { // promptText is "Rome", condition is false, code from lines 60-62 will not run
+
+if ( promptText === "Florence" ) {
     promptText = prompt ( story.city.good + " Are you feeling adventurous, yes or no?" );
+    while ( promptText !== "yes" && promptText !== "no" ) {
+        promptText = prompt ( story.city.good + " Are you feeling adventurous, yes or no?" );
+    }
 }
-else if ( promptText === "Rome" ) { // promptText is "Rome", condition is true, code from lines 63-65 will not run
-    updateOutput ( story.city.bad ); // promptText is "Rome", "bad" condition is appended as HTML to screen
+else if ( promptText === "Rome" ) {
+    updateOutput ( story.city.bad );
 };
 
 //Step 4: Adventure
-while ( promptText !== "yes" && promptText !== "no" ) { // promptText is "Rome", condition is true, code from lines 68-70 will run
-    promptText = prompt ( story.city.good + " Are you feeling adventurous, yes or no?" ); // promptText is now "no"
-}
-if ( promptText === "yes" ) { // promptText is "no", condition is false, code will not run
+if ( promptText === "yes" ) {
     updateOutput ( story.adventure.good );
 }
-else if ( promptText === "no" ) { // promptText is "no", condition is true, code from lines 74-76 will run
+else if ( promptText === "no" ) {
     updateOutput ( story.adventure.bad );
 };
 
