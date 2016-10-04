@@ -3,7 +3,7 @@
 // });
 
 $(".hamburger").click(
-    function() {        
+    function() {
         if ($( ".dropdown" ).hasClass( "toggle" )){
             $( ".dropdown" ).removeClass("toggle")
         }
@@ -21,6 +21,26 @@ $("li").on( "mouseleave", function(){
     $( this ).removeClass( "highlight");
 } );
 
+//fade in contact-list
+var $contactList = $( ".contact-list" ).children();
+
+console.log( $contactList );
+
+for( var i = 0; i < $contactList.length; i++){
+    var $listElement = $( $contactList[i] );
+    var propertiesObject = {
+        "opacity": 1.0
+    };
+
+    $listElement.animate( propertiesObject, 1000 * (i + 1) );
+}
+
+
+// var contactArray = [ "Github", "LinkedIn", "Email" ];
+//
+// for ( var i = 0; i < contactArray.length; i++ ){
+//     console.log( contactArray[i] );
+// }
 
 
 // $("li").on( "mouseover", function(){
