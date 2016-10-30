@@ -31,7 +31,8 @@ h1 {
 h2 {
     font-size: 1.25rem;
     color: #ffffff;
-    font-family: "Lato", "Helvetica", sans-serif;
+    font-family: Lato-light, "Helvetica", sans-serif;
+    font-weight: 100;
     }
 
 h3 {
@@ -106,24 +107,6 @@ input[type='submit'] {
     padding: 10px 20px;
 }
 
-/*.nav-bar a:link {
-    color: white;
-    text-decoration: none;
-}*/
-
-/*.nav-bar a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-bar a:hover {
-    color: #ffd700;
-}
-
-.nav-bar a:active {
-    color: #ffd700;
-}*/
-
 .highlight {
     background-color: yellow;
 }
@@ -141,7 +124,7 @@ input[type='submit'] {
     margin-bottom: 40px;
 }
 
-.header-media {
+/*.header-media {
     text-align: center;
     height: 25rem;
     display: flex;
@@ -152,9 +135,9 @@ input[type='submit'] {
     url(http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc-1456070535WEH.jpg);
     background-size: cover;
     margin-bottom: 40px;
-}
+}*/
 
-.header-projects {
+/*.header-projects {
     text-align: center;
     height: 25rem;
     display: flex;
@@ -165,9 +148,9 @@ input[type='submit'] {
     url(https://assets.entrepreneur.com/content/16x9/822/20150708163614-wordpress-millenial-desk-startup-plug-ins.jpeg);
     background-size: cover;
     margin-bottom: 40px;
-}
+}*/
 
-.header-blog {
+/*.header-blog {
     text-align: center;
     height: 25rem;
     display: flex;
@@ -178,7 +161,7 @@ input[type='submit'] {
     url(https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg);
     background-size: cover;
     margin-bottom: 40px;
-}
+}*/
 
 .header-contact {
     text-align: center;
@@ -193,6 +176,21 @@ input[type='submit'] {
     margin-bottom: 40px;
 }
 
+.header-projects h1 {
+    font-size: 3.5rem;
+    color: #000000;
+    font-weight: 100;
+    font-family: "Lato", "Helvetica", sans-serif;
+    margin-bottom: 10px;
+}
+
+.header-projects h2 {
+    font-size: 1.25rem;
+    color: #000000;
+    font-family: Lato-light, "Helvetica", sans-serif;
+    font-weight: 100;
+}
+
 .fill-in-info {
     display: flex;
     margin-bottom: 20px;
@@ -204,29 +202,66 @@ input[type='submit'] {
 }
 
 
-.blurb-text {
-    margin-bottom: 50px;
-    /*position: relative;*/
-    /*margin-bottom: 50px;*/
+.intro-text p {
+    margin-bottom: 25px;
+    font-family: Lato-light, "Helvetica", sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-bottom: 10px;
+    line-height: 1.75;
 }
 
-.blurb-text h3 {
+.work-button p {
+    background-color: hotpink;
+    padding: 50px;
+    font-family: Lato-light, "Helvetica", sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*.blurb-text h3 {
     margin-bottom: 20px;
-}
+}*/
 
-.blurb-text img {
+/*.blurb-text p {
+    font-family: Lato-light, "Helvetica", sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-bottom: 10px;
+    line-height: 1.75;
+}*/
+
+/*.blurb-text img {
     width: 25rem;
     height: auto;
     float: left;
     padding-top: 20px;
     padding-right: 30px;
     padding-bottom: 20px;
-}
+}*/
 
-.blurb-text-video {
+/*.blurb-text-video {
     display: flex;
     justify-content: center;
     align-items: center;
+}*/
+
+.work ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work img {
+    width: 300px;
+    height: 225px;
+    padding: 20px;
+    background-color: hotpink;
 }
 
 .footer {
